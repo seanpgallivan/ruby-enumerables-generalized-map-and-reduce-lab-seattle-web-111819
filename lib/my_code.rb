@@ -20,5 +20,5 @@ def reduce(array, start=1)
     puts tot
     i += 1
   end
-  tot
+  if tot == tot
 end
