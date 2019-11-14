@@ -9,11 +9,11 @@ def map(array)
 end
 
 def reduce(array, start=0)
-  puts "array: " + array
+  puts "array: " + array.to_s
   tot = start
   i = 0
   while i < array.length do
-    puts i + " tot: " + tot
+    puts i.to_s + " tot: " + tot.to_s
     puts array[i]
     tot = yield(tot, array[i])
     puts tot
