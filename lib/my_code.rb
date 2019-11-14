@@ -13,9 +13,10 @@ def reduce(array, start=0)
   tot = start
   i = 0
   while i < array.length do
-    if array[i]
-      tot = yield(tot, array[i])
-    end
+    puts tot
+    puts array[i]
+    tot = yield(tot, array[i])
+    puts tot
     i += 1
   end
   tot
