@@ -20,5 +20,8 @@ def reduce(array, start=1)
     puts tot
     i += 1
   end
-  if tot == tot
+  if tot.is_a? Numeric
+    return tot - 1
+  end
+  return tot
 end
