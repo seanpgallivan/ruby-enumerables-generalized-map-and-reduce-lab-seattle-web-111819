@@ -22,4 +22,3 @@ def reduce(array, start=0)
   end
   tot
 end
-puts (true || 1)
