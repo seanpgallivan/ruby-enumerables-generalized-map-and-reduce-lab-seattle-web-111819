@@ -19,7 +19,8 @@ def reduce(array, start=0)
     if array[i]
       tot = yield(array[i], tot)
     else
-      tot = yield(tot)
+      tot = yield(tot, array[i])
+    end
     puts i.to_s + " new: " + tot.to_s
     i += 1
   end
