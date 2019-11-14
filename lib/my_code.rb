@@ -22,4 +22,4 @@ def reduce(array, start=0)
   end
   tot
 end
-puts ("hi" || true)
+puts (true || 1)
