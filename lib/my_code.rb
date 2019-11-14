@@ -9,6 +9,7 @@ def map(array)
 end
 
 def reduce(array, start=0)
+  puts array
   tot = start
   i = 0
   while i < array.length do
