@@ -8,9 +8,9 @@ def map(array)
   new
 end
 
-def reduce(array, start=1)
+def reduce(array, start=0)
   puts "array: " + array.to_s
-  tot = start
+  tot = 0
   i = 0
   while i < array.length do
     puts i.to_s + " tot: " + tot.to_s
@@ -20,9 +20,5 @@ def reduce(array, start=1)
     puts tot
     i += 1
   end
-  if tot.is_a? Numeric
-    puts "numeric"
-    tot -= 1
-  end
-  return tot
+  tot
 end
