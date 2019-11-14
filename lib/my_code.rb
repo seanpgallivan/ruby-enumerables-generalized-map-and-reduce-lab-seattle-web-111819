@@ -15,7 +15,7 @@ def reduce(array, start=0)
   while i < array.length do
     puts i.to_s + " tot: " + tot.to_s
     puts i.to_s + " arr: " + array[i].to_s
-    puts i.to_s + " boo: " + tot || array[i]
+    puts i.to_s + " boo: " + (tot || array[i]).to_s
     tot = yield(tot, array[i])
     puts i.to_s + " new: " + tot.to_s
     i += 1
