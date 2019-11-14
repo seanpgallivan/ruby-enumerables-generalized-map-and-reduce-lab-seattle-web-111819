@@ -21,7 +21,7 @@ def reduce(array, start=1)
     i += 1
   end
   if tot.is_a? Numeric
-    return tot - 1
+    tot -= 1
   end
   return tot
 end
