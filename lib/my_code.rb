@@ -8,7 +8,7 @@ def map(array)
   new
 end
 
-def reduce(array, start=0)
+def reduce(array, start=nil)
   puts "array: " + array.to_s
   tot = start
   i = 0
