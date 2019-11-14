@@ -10,7 +10,7 @@ end
 
 def reduce(array, start=0)
   puts "array: " + array.to_s
-  tot = 0
+  tot = start
   i = 0
   while i < array.length do
     puts i.to_s + " tot: " + tot.to_s
